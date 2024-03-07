@@ -4,7 +4,7 @@
   "description": "Remake of TabNews with the aim of learning Web Development and gaining new experiences.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev"
   },
   "author": "Zvorky",
   "license": "MIT",
