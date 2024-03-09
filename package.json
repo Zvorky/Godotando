@@ -4,7 +4,9 @@
   "description": "Remake of TabNews with the aim of learning Web Development and gaining new experiences.",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev"
+    "dev": "next dev",
+    "lint:check": "prettier --check .",
+    "lint:fix": "prettier --write ."
   },
   "author": "Zvorky",
   "license": "MIT",
@@ -14,6 +16,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "editorconfig": "^2.0.0"
+    "editorconfig": "^2.0.0",
+    "prettier": "^3.2.5"
   }
 }
