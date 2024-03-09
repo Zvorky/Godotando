@@ -1,25 +1,26 @@
 body {
-    background-color: #4A325D;
-    background-image: url("background.jpg");
-    background-repeat: repeat;
-    color: white;
-    padding: 42px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
-    text-shadow: 0 -4px 22px rgba(0,0,0,0.3);
+  background-color: #4a325d;
+  background-image: url("background.jpg");
+  background-repeat: repeat;
+  color: white;
+  padding: 42px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-shadow: 0 -4px 22px rgba(0, 0, 0, 0.3);
 }
 
-h1, h2 {
-    text-shadow: 0 -4px 42px rgba(0,0,0,0.69);
-    margin-bottom: 69px;
+h1,
+h2 {
+  text-shadow: 0 -4px 42px rgba(0, 0, 0, 0.69);
+  margin-bottom: 69px;
 }
 
 h2 {
-    margin-top: 110px;
+  margin-top: 110px;
 }
 
 p {
-    text-align: center;
+  text-align: center;
 }
