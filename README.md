@@ -1,8 +1,10 @@
-# <p align=center>TabNews Clone</p>
+# <p align=center>Godotando</p>
 
-Remake of [**TabNews**](https://www.tabnews.com.br/) with the aim of learning Web Development and gaining new experiences.
+<p align=center>Germinando o Godot Engine pelo Brasil.</p>
 
-- This project is part of the course [Curso.Dev](https://curso.dev/) by [Filipe Deschamps](https://github.com/filipedeschamps).
+Remake of [**TabNews**](https://www.tabnews.com.br/) aiming at [Godot](https://godotengine.org) community from Brazil, learning Web Development and gaining new experiences during the process.
+
+- This project is **on track** thanks to [Filipe Deschamps](https://github.com/filipedeschamps) and his course [Curso.Dev](https://curso.dev/)
 - Official TabNews Source Code: [github.com/filipedeschamps/tabnews.com.br](https://github.com/filipedeschamps/tabnews.com.br)
 
 ### Learned During this Project:

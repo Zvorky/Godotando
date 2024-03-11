@@ -1,21 +1,31 @@
+import packageInfo from "../package.json";
+
 function Home() {
   return (
     <div>
-      <h1>Feliz dia das Mulheres, Vida!</h1>
       <div>
-        Obrigado, Nátali, por fazer minha vida melhor, trazer-me conforto,
-        incentivar, e ser feliz...
+        <h1>{packageInfo.name}</h1>
+        {packageInfo.description}
       </div>
-      <div>
-        Você me inspira, sua dedicação é exemplar, não vejo a hora de poder
-        dizer aos outros:{" "}
+      <div class="block">
+        <h2 class="soon">[ Em Construção ]</h2>
+        Participe do nosso desenvolvimento pelo
+        <h3>
+          <a
+            href={`https://github.com/${packageInfo.author}/${packageInfo.name}`}
+          >
+            GitHub!
+          </a>
+        </h3>
       </div>
-      <p>
-        "Minha esposa tem artigos renomados publicados na área da Enfermagem e
-        afins"...
-      </p>
-      <h2>❤️ Te Amo! ❤️</h2>
-      <signature>~ Enzo</signature>
+      <footer>
+        {packageInfo.name} v{packageInfo.version}
+        <div>
+          <a href={`https://github.com/${packageInfo.author}/`}>
+            © 2024 {packageInfo.author}
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }

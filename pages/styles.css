@@ -1,26 +1,120 @@
+:root {
+  --primary-color: #dbdbdb;
+  --secondary-color: #647ac0;
+  --background-color: #333b47;
+  --text-color: #fff;
+  --link-color: var(--secondary-color);
+  --hover-color: var(--primary-color);
+}
+
 body {
-  background-color: #4a325d;
-  background-image: url("background.jpg");
-  background-repeat: repeat;
-  color: white;
+  color: var(--text-color);
   padding: 42px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-align: center;
-  margin-left: 10%;
-  margin-right: 10%;
-  text-shadow: 0 -4px 22px rgba(0, 0, 0, 0.3);
+  margin-left: 5%;
+  margin-right: 5%;
+  text-shadow: 0 -4px 22px rgba(0, 0, 0, 0.69);
+  position: relative;
+  overflow: hidden;
+  background-color: var(--background-color);
+}
+
+body::before {
+  animation: bg-loop 11s;
+  animation-iteration-count: infinite;
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: -69%;
+  width: 200%;
+  height: 100%;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      var(--primary-color)
+    ),
+    url("../icon.svg");
+  background-repeat: repeat;
+  opacity: 0.11;
+  transform: rotate(25deg);
+  transform-origin: center;
+  z-index: -1;
 }
 
 h1,
-h2 {
-  text-shadow: 0 -4px 42px rgba(0, 0, 0, 0.69);
-  margin-bottom: 69px;
+h2,
+h3 {
+  text-shadow: 0 -4px 31px rgba(0, 0, 0, 0.69);
+  color: var(--primary-color);
 }
 
-h2 {
-  margin-top: 110px;
+h1::first-letter {
+  text-transform: uppercase;
 }
 
-p {
-  text-align: center;
+h3 {
+  margin-top: 0;
+}
+
+.soon {
+  animation: soon 690ms;
+  font-size: 246%;
+  margin-bottom: 0;
+}
+
+a {
+  color: var(--link-color);
+  transition: ease 420ms;
+}
+
+a:hover {
+  color: var(--hover-color);
+}
+
+.block {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: -42%;
+}
+
+footer {
+  animation: moveup 2s;
+  position: fixed;
+  background-color: var(--background-color);
+  opacity: 69%;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding-top: 11px;
+  padding-bottom: 16px;
+}
+
+@keyframes moveup {
+  from {
+    bottom: -100%;
+  }
+  to {
+    bottom: 0%;
+  }
+}
+
+@keyframes soon {
+  from {
+    opacity: 0;
+    transform: rotate(-25deg) scale(311%);
+  }
+}
+
+@keyframes bg-loop {
+  from {
+    height: 100%;
+  }
+  50% {
+    height: 200%;
+  }
+  to {
+    height: 100%;
+  }
 }

@@ -1,7 +1,7 @@
 {
-  "name": "tabnews-clone",
+  "name": "godotando",
   "version": "1.0.0",
-  "description": "Remake of TabNews with the aim of learning Web Development and gaining new experiences.",
+  "description": "Germinando o Godot Engine pelo Brasil.",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
